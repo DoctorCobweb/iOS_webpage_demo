@@ -7,11 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
+@synthesize window = _window;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //self.window.rootViewController = self.viewController;
     // Override point for customization after application launch.
     return YES;
 }

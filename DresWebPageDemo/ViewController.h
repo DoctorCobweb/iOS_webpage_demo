@@ -10,4 +10,7 @@
 
 @interface ViewController : UIViewController
 
+@property (retain, nonatomic) IBOutlet UIWebView *viewWeb;
+
+
 @end

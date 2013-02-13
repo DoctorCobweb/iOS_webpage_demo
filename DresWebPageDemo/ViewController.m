@@ -14,8 +14,15 @@
 
 @implementation ViewController
 
+@synthesize viewWeb;
+
 - (void)viewDidLoad
 {
+    NSString *urlAddress = @"http://www.spinning-half-jersey-jaxrs.appspot.com/rest/gigs";
+    NSURL *url = [NSURL URLWithString:urlAddress];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [viewWeb loadRequest:requestObj];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
